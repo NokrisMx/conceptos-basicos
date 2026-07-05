@@ -1,0 +1,116 @@
+CREAR PROYECTO ASP.NET CORE WEB API CON DOCKER EN LOCAL	
+
+1- Abrir VSC
+    Dar clic en el botón Crear proyecto de .NET que está en el tab Explorador
+    Buscar plantilla ASP.NET Core Web API
+    Se elije donde guardar y se le asigna un nombre al proyecto
+    En los ajustes de la creación revisar que controladores esté en true.
+    Crear proyecto
+
+2- Si no viene con swagger
+   se instala con: dotnet add package Swashbuckle.AspNetCore [Nota:si ningun comando funciona, abrir la solucion en la terminal]
+
+3- Crear carpetas faltantes
+     Models/Dtos
+     Constants
+     Data
+     Mapping
+     Repository
+
+4- Crear imagen y contenedor para sql server
+     Crear archivo docker-compose.yaml en raiz del proyecto y agregar el script necesario a ese archivo.
+     Levantar el contenedor con: docker-compose up -d
+     Seleccionar sql server y agregar conexion
+     ingresar en  server name: localhost, marcar Trust server certificate, Authentication SQL Login, User name: SA, Password: MyStrongPass123 y conectar
+     SI YA SE LEVANTO ANTERIORMENTE UN CONTENEDOR SOLO ASEGURASRE DE QUE ESTE CORRIENDO, NO ES NECESARIO HACER EL PASO 4.
+
+5- Conexion a bd
+     Agregar conexion en appsettings.json
+
+6- Instalar paquetes necesarios: 
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    dotnet add package Microsoft.EntityFrameworkCore.Tools
+    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+    dotnet add package Microsoft.EntityFrameworkCore.Design   
+    dotnet add package Mapster
+    dotnet add package Mapster.DependencyInjection
+    dotnet add package Asp.Versioning.Mvc
+    dotnet add package Asp.Versioning.Mvc.ApiExplorer
+    dotnet add package Microsoft.OpenApi
+    dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
+7- Crear archivo de contexto
+     En Model crear ApplicationUser.cs
+     En Data crear ApplicationDbContext.cs
+     En Program.cs agregar la configuracion sql e integracion con identity
+
+8- Crear modelos, dtos necesarios y en model el ApplicationUser para identity
+
+9- Mapeo
+     Agregar en Mapping el archivo MapsterConfig.cs y llamarlo en program.cs
+
+10- Crear migracion:
+       dotnet ef migrations add InitialCreate
+       dotnet ef database update
+       Si no reconoce los comandos, instalar el comando para poder utilizar los comandos anteriores:
+       dotnet tool install --global dotnet-ef   
+
+12- Crear los IRepository y Repository 
+       Configurar en Program los repositorios, el use authentication, use cors, use files, api version, addCors, configurar swagger
+        La confiiguracion agregarla en un archivo aparte y llamar los metodos en program para que no sea tan extenso el archivo
+
+13- Crear los controladores 
+      
+14- Ya terminado se agrega los seed con la migracion inicial y se ejecuta el build para exportar:
+        dotnet publish -c Release -o ./publish
+
+15- Comandos
+       exportar bd en sql:
+       dotnet ef migrations script --output migration.sql
+      borrar bd:
+      dotnet ef database drop
+      descarga dependencias:
+      dotnet restore
+     compila proyecto:
+     dotnet buid
+     limpia archivos generados:
+     dotnet clean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Quitar lo que ya subiste (IMPORTANTE)
+
+Aunque ya estén en GitHub, puedes sacarlos del control de versiones:
+
+git rm -r --cached bin
+git rm -r --cached obj
+🚀 3. Hacer commit
+git add .
+git commit -m "Remove bin and obj folders"
+git push

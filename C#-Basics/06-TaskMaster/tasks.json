@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "f73d8fd",
+    "Description": "Comer saludable",
+    "Completed": false,
+    "CreatedAt": "2024-01-15T00:00:00",
+    "ModifiedAt": "2024-01-15T00:00:00",
+    "Deleted": true
+  },
+  {
+    "Id": "3f6c921",
+    "Description": "Estudiar C#",
+    "Completed": false,
+    "CreatedAt": "2025-03-11T13:20:53.051415-06:00",
+    "ModifiedAt": "2025-03-12T11:16:17.74727-06:00",
+    "Deleted": false
+  },
+  {
+    "Id": "ac3adcc",
+    "Description": "Conseguir empleo",
+    "Completed": true,
+    "CreatedAt": "2026-06-23T11:22:14.7222389-06:00",
+    "ModifiedAt": "2026-06-23T11:40:10.2830276-06:00",
+    "Deleted": false
+  }
+]

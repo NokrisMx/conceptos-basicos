@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jD3Jqlkx4Ec=",
+  "success": true,
+  "projectFilePath": "E:\\gueva\\Documents\\Desarrolloweb\\ConceptosBasicos\\C#-Basics\\HelloApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gueva\\.nuget\\packages\\betterconsoles.colors\\1.1.1\\betterconsoles.colors.1.1.1.nupkg.sha512",
+    "C:\\Users\\gueva\\.nuget\\packages\\betterconsoles.core\\1.2.0\\betterconsoles.core.1.2.0.nupkg.sha512",
+    "C:\\Users\\gueva\\.nuget\\packages\\betterconsoletables\\2.0.5-rc1\\betterconsoletables.2.0.5-rc1.nupkg.sha512",
+    "C:\\Users\\gueva\\.nuget\\packages\\clawfoot.core\\0.6.0\\clawfoot.core.0.6.0.nupkg.sha512",
+    "C:\\Users\\gueva\\.nuget\\packages\\clawfoot.extensions\\0.6.0\\clawfoot.extensions.0.6.0.nupkg.sha512",
+    "C:\\Users\\gueva\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
