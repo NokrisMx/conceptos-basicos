@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\gueva\\Documents\\Desarrolloweb\\ConceptosBasicos\\C#-Basics\\HelloApp.csproj": {}
+    "E:\\gueva\\Documents\\Desarrolloweb\\C#\\Pruebas\\Pruebas.csproj": {}
   },
   "projects": {
-    "E:\\gueva\\Documents\\Desarrolloweb\\ConceptosBasicos\\C#-Basics\\HelloApp.csproj": {
+    "E:\\gueva\\Documents\\Desarrolloweb\\C#\\Pruebas\\Pruebas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\gueva\\Documents\\Desarrolloweb\\ConceptosBasicos\\C#-Basics\\HelloApp.csproj",
-        "projectName": "HelloApp",
-        "projectPath": "E:\\gueva\\Documents\\Desarrolloweb\\ConceptosBasicos\\C#-Basics\\HelloApp.csproj",
+        "projectUniqueName": "E:\\gueva\\Documents\\Desarrolloweb\\C#\\Pruebas\\Pruebas.csproj",
+        "projectName": "Pruebas",
+        "projectPath": "E:\\gueva\\Documents\\Desarrolloweb\\C#\\Pruebas\\Pruebas.csproj",
         "packagesPath": "C:\\Users\\gueva\\.nuget\\packages\\",
-        "outputPath": "E:\\gueva\\Documents\\Desarrolloweb\\ConceptosBasicos\\C#-Basics\\obj\\",
+        "outputPath": "E:\\gueva\\Documents\\Desarrolloweb\\C#\\Pruebas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,12 +52,6 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "dependencies": {
-            "BetterConsoleTables": {
-              "target": "Package",
-              "version": "[2.0.5-rc1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
