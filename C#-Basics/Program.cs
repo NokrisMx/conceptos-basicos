@@ -65,7 +65,11 @@ partial class Program
         //ManageJsonFile.Program.ManageJsonFile();
         #endregion
         #region TaskMaster
-        TaskMaster.Program.TaskMaster();
+        //TaskMaster.Program.TaskMaster();
+        #endregion
+        #region Exercises
+        //Exercise01();
+        //Exercise02();
         #endregion
     }
 }
