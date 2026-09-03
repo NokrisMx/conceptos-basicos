@@ -70,6 +70,10 @@ partial class Program
         #region Exercises
         //Exercise01();
         //Exercise02();
+        //Exercise03();
+        //Exercise04();
+        //Exercise05();
+        Exercise06();
         #endregion
     }
 }
