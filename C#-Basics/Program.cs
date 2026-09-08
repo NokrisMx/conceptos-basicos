@@ -97,7 +97,15 @@ partial class Program
         //Exercise27();
         //Exercise28();
         //Exercise29();
-        Exercise30();
+        //Exercise30();
+        //Exercise31();
+        //Exercise32();
+        //Exercise33();
+        //Exercise34();
+        //Exercise35();
+        //Exercise36();
+        //Exercise37();
+        Exercise38();
         #endregion
     }
 }
