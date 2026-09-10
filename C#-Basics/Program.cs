@@ -137,7 +137,12 @@ partial class Program
         //Exercise67();
         //Exercise68();
         //Exercise69();
-        Exercise70();
+        //Exercise70();
+        //Exercise71();
+        //Exercise72();
+        //Exercise73();
+        //Exercise74();
+        Exercise75();
         #endregion
     }
 }
